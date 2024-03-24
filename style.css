@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+h1{
+    letter-spacing: 6px;
+    text-transform: uppercase;  
+    user-select: none;
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    animation: aniem 4s infinite ease-in;
+}
+span{
+    position: absolute; 
+    height: 200px;
+    width: 200px;
+    z-index: -1;
+    /* animation: anime 4s infinite linear; */
+}
+@keyframes aniem {
+    0%{color: green;}
+    30%{color: orange;}
+    60%{color: blue; }
+    90%{color: red; }
+    
+}
+@keyframes  anime {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    5%,95%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+}
